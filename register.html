@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Page</title>
     <link rel="icon" href="emc.png">
 </head>
-
 <body>
     <center>
         <h1>WELCOME GUYS 🤩</h1>
@@ -18,48 +20,48 @@
             <table>
                 <tr>
                     <td>NAME:</td>
-                    <td><input type="text" placeholder="ENTER YOUR NAME"></td>
+                    <td><input type="text" placeholder="ENTER YOUR NAME" required></td>
                 </tr>
                 <tr>
                     <td>AGE:</td>
-                    <td><input type="number" placeholder="ENTER YOUR AGE"></td>
+                    <td><input type="number" placeholder="ENTER YOUR AGE" required></td>
                 </tr>
                 <tr>
                     <td>GENDER:</td>
                     <td>
-                        <input type="radio" name="gender"> MALE
-                        <input type="radio" name="gender"> FEMALE
+                        <input type="radio" name="gender" value="Male"> MALE
+                        <input type="radio" name="gender" value="Female"> FEMALE
                     </td>
                 </tr>
                 <tr>
                     <td>EMAIL:</td>
-                    <td><input type="text" placeholder="ENTER YOUR EMAIL"></td>
+                    <td><input type="email" placeholder="ENTER YOUR EMAIL" required></td>
                 </tr>
                 <tr>
                     <td>SELECT CATEGORY:</td>
                     <td>
-                        <select>
-                            <option>Motovlogging</option>
-                            <option>Vlogging</option>
-                            <option>Biking</option>
-                            <option>Daily Life Vlog</option>
+                        <select required>
+                            <option value="Motovlogging">Motovlogging</option>
+                            <option value="Vlogging">Vlogging</option>
+                            <option value="Biking">Biking</option>
+                            <option value="Daily Life Vlog">Daily Life Vlog</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <td>UPLOAD FILE:</td>
-                    <td><input type="file"></td>
+                    <td><input type="file" required></td>
                 </tr>
                 <tr>
-                    <td><input type="reset"></td>
-                    <td><input type="submit"></td>
+                    <td><input type="reset" value="Reset"></td>
+                    <td><input type="submit" value="Submit"></td>
                 </tr>
             </table>
         </form>
         <hr>
         <a href="index.html">HOME</a> | 
         <a href="https://www.instagram.com/suri_kuty/">INSTAGRAM</a> | 
-        <a>YOUTUBE</a>
+        <a href="#">YOUTUBE</a>
     </center>
 </body>
 </html>
